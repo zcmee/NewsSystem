@@ -1,0 +1,15 @@
+my-configuration-properties:
+  app-name: Peter Kowalski
+  app-description: Kowal to memo
+  app-date-of-birth: 13-12-1987
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
+    username: root
+    password: 123456asd
+    validationQuery: SELECT 1
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
