@@ -13,7 +13,6 @@ public class GlobalExceptionHandler {
     @ResponseStatus(value= HttpStatus.INTERNAL_SERVER_ERROR, reason="IOException occured")
     @ExceptionHandler(IllegalArgumentException.class)
     public String handleIllegalArgumentException(HttpServletRequest request, Exception ex){
-        System.out.println("INTERSTELLAR");
         return "database_error";
     }
 

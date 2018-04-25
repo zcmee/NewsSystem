@@ -5,7 +5,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "news")
-final public class News implements Serializable {
+public final class News implements Serializable {
 
     @Id
     @Column(name = "id")
@@ -19,6 +19,7 @@ final public class News implements Serializable {
     private String data;
 
     public News() {
+        // default constructor
     }
 
     public News(String title, String text, String data) {

@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name ="Comments")
-public class Comment implements Serializable{
+public final class Comment implements Serializable{
 
     @Id
     @Column(name = "id")
@@ -27,6 +27,7 @@ public class Comment implements Serializable{
     private String data;
 
     public Comment() {
+        // default constructor
     }
 
     public Long getId() {
