@@ -1,7 +1,7 @@
 my-configuration-properties:
   app-name: Peter Kowalski
-  app-description: Kowal to memo
-  app-date-of-birth: 13-12-1987
+  app-description: Kowal to menelanto
+  app-date-birth: 13-12-1987
 
 spring:
   datasource:
@@ -13,3 +13,5 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
+
+static-value: SEX
