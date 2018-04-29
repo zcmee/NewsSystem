@@ -25,7 +25,7 @@
 	</properties>
 
 	<dependencies>
-		<!--DATABASE CONNECTION-->
+	<!--DATABASE CONNECTION-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -38,8 +38,9 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
-		<!--/DATABASE CONNECTION-->
+	<!--/DATABASE CONNECTION-->
 
+	<!-- SPRING DEPENDENCIES -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -54,6 +55,20 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
+	<!-- /SPRING DEPENDENCIES -->
+
+	<!--WEB JARS-->
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>jquery</artifactId>
+			<version>1.12.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+	<!-- /WEB JARS-->
 	</dependencies>
 	<build>
 		<plugins>
