@@ -4,6 +4,7 @@ import com.github.zcmee.newssystem.entities.Comment;
 import com.github.zcmee.newssystem.entities.News;
 import com.github.zcmee.newssystem.services.CommentService;
 import com.github.zcmee.newssystem.services.NewsService;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,6 +26,7 @@ public class AppRESTController {
     }
 
     @PostMapping("saveNews")
+    @ResponseStatus(value = HttpStatus.CREATED)
     public News createNews(@RequestBody News news) {
         return newsService.create(news);
     }
